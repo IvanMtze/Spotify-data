@@ -6,9 +6,9 @@ CI
 
 on:
   push:
-    branches: [ master , hotfices, release, develop]
+    branches: [ master , hotfixes, release, develop]
   pull_request:
-    branches: [ master , hotfices, release, develop]
+    branches: [ master , hotfixes, release, develop]
 
 jobs:
   build:
