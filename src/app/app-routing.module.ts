@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'/login',
-    pathMatch:'full'
+    path:"",
+    redirectTo:'/landingPage',
+    pathMatch: 'full'
   },
     {
     path: 'registro',
     component: RegistroComponent
   },
-    {
-    path:"",
-    redirectTo:'/ladingPage',
-    pathMatch: 'full'
+  {
+    path: 'landingPage',
+    component: LandingPageComponent 
   },
   {
-   path: 'ladingPage',
-    loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule) 
+    path: 'login', 
+    component: LoginComponent
   },
-  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }];
-
+];
 
 
 @NgModule({
