@@ -13,18 +13,18 @@
                   <form>
                       <div class="form-group">
                           <h5 class="text-white">Correo electrónico:</h5>
-                          <input type="email" class="form-control"/>
+                          <input type="email" id="correo"  class="form-control" #inputCorreo>
                       </div>
                     <div class="form-group">
                         <h5 class="text-white">Contraseña:</h5>
-                        <input type="password" class="form-control"/>
+                        <input type="password" id="contra" class="form-control" #inputContra>
                     </div>
                     <div class="text-center texto_verde">
                         <p><a class="texto_verde" href="/#">¿Has olvidado tu contraseña?</a></p>
-                        <p>¿No tienes cuenta? <a class="texto_verde" href="/#"> Regístra tu cuenta</a></p>
+                        <p>¿No tienes cuenta? <a class="texto_verde" href="../registro/"> Regístra tu cuenta</a></p>
                     </div>
                     <div class="text-center">
-                        <input type="submit" value="Iniciar" class="btn btn-lg btn_spotify mt-3">
+                        <input type="submit" value="Iniciar" class="btn btn-lg btn_spotify mt-3" (click)="iniciarSesion(inputCorreo.value,inputContra.value)">
                     </div>
                   </form>
               </div>
