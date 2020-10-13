@@ -19,7 +19,7 @@ describe('LoginComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('checar que el correo tenga @', async(() => {
+  it('checar que el correo tenga @', async(() => {
     (<HTMLInputElement>document.getElementById('contra'))
   }));
 });
