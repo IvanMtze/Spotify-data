@@ -1,0 +1,24 @@
+$fondo: #191414;
+$verde: #1DB954;
+
+.fondo{
+  background-color: $fondo;
+}
+.fondo_formulario{
+  background-color: black;
+}
+.texto_verde{
+  color: $verde;
+}
+.btn_spotify{
+  background-color: $verde;
+  color: white;
+  font-size: 1.5em;
+  width: 60%;
+  border-radius: 50px;
+}
+@media (min-width: 768px) {
+  .formulario{
+    max-width: 50%;
+  }
+}
