@@ -7,12 +7,14 @@ import { UsuariosService } from './usuarios.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistroComponent } from './registro/registro.component';
+import { UiAdminComponent } from './ui-admin/ui-admin.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistroComponent,
+    UiAdminComponent,
 
   ],
   imports: [
