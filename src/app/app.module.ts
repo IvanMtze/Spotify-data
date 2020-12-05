@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistroComponent } from './registro/registro.component';
 import { UiAdminComponent } from './ui-admin/ui-admin.component';
+import { NavbarInicialComponent } from './navbar-inicial/navbar-inicial.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { UiAdminComponent } from './ui-admin/ui-admin.component';
     AppComponent,
     RegistroComponent,
     UiAdminComponent,
+    NavbarInicialComponent,
 
   ],
   imports: [

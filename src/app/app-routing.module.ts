@@ -8,23 +8,23 @@ import { UiAdminComponent } from './ui-admin/ui-admin.component';
 const routes: Routes = [
   {
     path:"",
-    redirectTo:'/landingPage',
+    redirectTo:"/landingPage",
     pathMatch: 'full'
   },
     {
-    path: 'registro',
+    path: "registro",
     component: RegistroComponent
   },
   {
-    path: 'landingPage',
+    path: "landingPage",
     component: LandingPageComponent 
   },
   {
-    path: 'login', 
+    path: "login", 
     component: LoginComponent
   },
   {
-    path: 'admin', 
+    path: "admin", 
     component: UiAdminComponent
   }
 ];
