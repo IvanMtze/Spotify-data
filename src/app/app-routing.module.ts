@@ -8,10 +8,10 @@ import { UiAdminComponent } from './ui-admin/ui-admin.component';
 const routes: Routes = [
   {
     path:"",
-    redirectTo:"/landingPage",
+    redirectTo:"andingPage",
     pathMatch: 'full'
   },
-    {
+  {
     path: "registro",
     component: RegistroComponent
   },

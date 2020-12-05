@@ -1,7 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LandingPageRoutingModule } from './landing-page-routing.module';
 import { LandingPageComponent } from './landing-page.component';
 import { AppRoutingModule} from '../app-routing.module';
 
@@ -9,7 +9,6 @@ import { AppRoutingModule} from '../app-routing.module';
   declarations: [LandingPageComponent],
   imports: [
     CommonModule,
-    LandingPageRoutingModule,
     AppRoutingModule
   ],
 })
