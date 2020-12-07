@@ -8,7 +8,7 @@ import { UiAdminComponent } from './ui-admin/ui-admin.component';
 const routes: Routes = [
   {
     path:"",
-    redirectTo:"andingPage",
+    redirectTo:"landingPage",
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,7 @@ const routes: Routes = [
   {
     path: "admin", 
     component: UiAdminComponent
-  }
+  },
 ];
 
 
