@@ -8,6 +8,8 @@ import { UiAdminComponent } from './ui-admin/ui-admin.component';
 import { NavbarInicialComponent } from './navbar-inicial/navbar-inicial.component';
 import { UsuariosService } from './usuarios.service';
 import { NavbarUsuarioComponent } from './navbar-usuario/navbar-usuario.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { NavbarUsuarioComponent } from './navbar-usuario/navbar-usuario.componen
     UiAdminComponent,
     NavbarInicialComponent,
     NavbarUsuarioComponent,
+    LandingPageComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

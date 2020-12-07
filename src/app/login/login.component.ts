@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
 import { UsuariosService } from '../usuarios.service';
@@ -33,5 +34,4 @@ export class LoginComponent implements OnInit {
     
     
   }
-
 }
