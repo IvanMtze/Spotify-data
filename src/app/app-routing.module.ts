@@ -4,6 +4,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { UiAdminComponent } from './ui-admin/ui-admin.component';
+import { UiUsuarioComponent } from "./ui-usuario/ui-usuario.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "admin", 
     component: UiAdminComponent
+  },
+  {
+    path: "user", 
+    component: UiUsuarioComponent
   },
 ];
 

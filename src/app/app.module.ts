@@ -10,6 +10,8 @@ import { UsuariosService } from './usuarios.service';
 import { NavbarUsuarioComponent } from './navbar-usuario/navbar-usuario.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
+import { UiUsuarioComponent } from './ui-usuario/ui-usuario.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { LoginComponent } from './login/login.component';
     NavbarUsuarioComponent,
     LandingPageComponent,
     LoginComponent,
+    UiUsuarioComponent,
+    NavbarAdminComponent,
   ],
   imports: [
     BrowserModule,
