@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { RegistroComponent } from './registro/registro.component';
 import { UiAdminComponent } from './ui-admin/ui-admin.component';
 import { NavbarInicialComponent } from './navbar-inicial/navbar-inicial.component';
-import { UsuariosService } from './usuarios.service';
 import { NavbarUsuarioComponent } from './navbar-usuario/navbar-usuario.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 import { UiUsuarioComponent } from './ui-usuario/ui-usuario.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+//services
+import { HttpClientModule } from '@angular/common/http';
+import { StorageService } from "../app/servicios/storage.service";
 
 
 @NgModule({
@@ -29,9 +31,10 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [UsuariosService],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
