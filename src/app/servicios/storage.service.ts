@@ -3,7 +3,7 @@ export class  StorageService {
   constructor(){}
 
   getApiUrl(){
-    return   'https://jwt-api-imc.herokuapp.com/'
+    return   'https://spotify-backend-dev.herokuapp.com/'
     //return   'http://201.147.64.84:8083' 
     
   }

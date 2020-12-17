@@ -13,7 +13,7 @@ import { retry, catchError } from 'rxjs/operators';
 
 export class UsersService {
 
- apiURL = 'https://jwt-api-imc.herokuapp.com/';
+ apiURL = 'https://spotify-backend-dev.herokuapp.com/';
 
 
   constructor(private http: HttpClient) { }
@@ -38,14 +38,13 @@ export class UsersService {
     )
   }
 
-/*   registerUser(userRegisterApi): Observable<UsersRegisterApi> {
+   registerUser(userRegisterApi): Observable<UsersRegisterApi> {
     console.log(JSON.stringify(userRegisterApi));
     return this.http.post<UsersRegisterApi>(this.apiURL + 'api/auth/signup', JSON.stringify(userRegisterApi), this.httpOptions)
     .pipe(
       retry(1),
-      catchError(this.MessageError)
     )
-  } */
+  }
 
   // Error handling 
   handleError(error) {

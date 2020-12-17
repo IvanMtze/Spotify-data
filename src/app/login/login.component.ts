@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private usersService: UsersService,
-    private storageService: StorageService
+    private storageService: StorageService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -42,10 +43,7 @@ export class LoginComponent implements OnInit {
         .subscribe((data: any) => {
 
           this.storageService.setSession("token", data.accessToken);
-
-          this.result = data.accessToken;
-          alert(data.accessToken);
-          // this.router.navigate(['/']);
+          this.router.navigate(['user']);
 
         })
 
