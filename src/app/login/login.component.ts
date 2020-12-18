@@ -43,7 +43,11 @@ export class LoginComponent implements OnInit {
         .subscribe((data: any) => {
 
           this.storageService.setSession("token", data.accessToken);
-          this.router.navigate(['user']);
+          if(this.nombreUsuario="admin"){
+            this.router.navigate(['admin']);
+          }else{
+            this.router.navigate(['user']);
+          }
 
         })
 
