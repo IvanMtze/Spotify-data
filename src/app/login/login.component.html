@@ -1,30 +1,24 @@
 <app-navbar-inicial></app-navbar-inicial>
 <div class="row">
-
-    <div class="col-md-6 mx-auto m-5">
-
-        <div class="col-md-3 mx-auto p-0 mb-1">
-            <img class="text-center" src="../../assets/images/spotifyLogo.png" alt="" width="140">
-        </div>
-
-        <div class="card">
+    <div id="contenedor" class="mx-auto m-5">
+        <div id="card-formulario" class="card">
             <div class="card-body">
                 <h3 class="text-center text-white">Iniciar Sesión</h3>
-                <form>
+                <form class="formulario">
                     <div class="form-group">
-                        <h5 class="text-white">Nombre de usuario:</h5>
+                        <h5 class="text-white">Nombre de usuario :</h5>
                         <input id="nombreUsuario" [(ngModel)]="nombreUsuario" type="text" class="form-control operator1" name="operator1" placeholder="Ingresa tu Nombre de Usuario">
                     </div>
                     <div class="form-group">
-                        <h5 class="text-white">Contraseña:</h5>
+                        <h5 class="text-white">Contraseña :</h5>
                         <input id="contrasenia" [(ngModel)]="contrasenia"  type="password" class="form-control operator2" name="operator2" placeholder="Ingresa tu Contraseña">
                     </div>
                     <div class="text-center texto_verde">
-                        <p><a class="texto_verde" href="/#">¿Has olvidado tu contraseña?</a></p>
+                        <p><a class="texto_verde" href="/registro">¿Has olvidado tu contraseña?</a></p>
                         <p>¿No tienes cuenta? <a class="texto_verde" href="/registro"> Regístra tu cuenta</a></p>
                     </div>
-                    <div class="text-center">
-                        <input type="submit" value="Iniciar" class="btn btn-lg btn_spotify mt-3"
+                    <div id="iniciarSesion" class="text-center">
+                        <input type="submit" value="Iniciar Sesión " class="btn btn-lg btn_spotify mt-3"
                         (click)="iniciarSesion()">
                     </div>
                 </form>
