@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { UsersService } from '../servicios/users.service';
+import { UsersRegisterApi } from "../models/usersregisterapi";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-registro',
@@ -8,32 +11,40 @@ import { FormsModule } from '@angular/forms';
 })
 export class RegistroComponent implements OnInit {
 
-  correo: string = '';
-  correo_confirm: string = '';
-  contra: string = '';
-  nombre:  string = '';
-  dia: string = '';
-  mes: string = '';
-  anio: string = '';
-  sexo: string = '';
-  
-  constructor() { }
-  ngOnInit(): void {}  
-  registrarUsuario($event){
-    
-    let usuario = {
-      correo: this.correo,
-      correo2: this.correo_confirm,
-      pass: this.contra,
-      nombre: this.nombre,
-      fnac:{
-        dia:this.dia,
-        mes:this.mes,
-        anio:this.anio
-      },
-      sexo: this.sexo
+  nombre = '';
+  nombreUsuario = '';
+  correo= '';
+  role= ['user'];
+  contrasenia = '';
+
+  constructor(
+    private usersService: UsersService,
+    private router: Router
+  ) { }
+
+  ngOnInit(): void {
+  }
+
+  registrarUsuario() {
+    var mydata = new UsersRegisterApi;
+
+    if (this.nombre == "" ||  this.nombreUsuario == "" || this.correo == "" || this.contrasenia == "" ) {
+
+      alert('Datos Requeridos no se aceptan campos vacios');
+
+    } else {
+      mydata.name=this.nombre;
+      mydata.username = this.nombreUsuario;
+      mydata.email=this.correo;
+      mydata.role=this.role;
+      mydata.password = this.contrasenia;
+
+      this.usersService.registerUser(mydata)
+        .subscribe((data: any) => {
+        })
+        alert('usuario registrado');
+        this.router.navigate(['/']);
     }
-    console.log(usuario)
+
   }
 }
-

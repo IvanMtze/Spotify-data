@@ -2,16 +2,18 @@
     <div class="row no-gutters">
        <div class="menu-admin">
           <nav class="navbar navbar-expand-lg ">
-             <a class="navbar-brand"><i class="fab fa-spotify"></i> Bienvenido</a>
+             <a class="navbar-brand"><i class="fab fa-spotify"></i> Administrador</a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>   
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="#" ><i class="icon ion-md-contact"></i>  Perfil <span class="sr-only">(current)</span></a>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#"><i class="icon ion-md-create"></i>  Editar</a>
                  </li>
                  <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="icon ion-md-trash"></i>  Eliminar</a>
+                </li>
                  <li class="nav-item dropdown">
                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Ordenar
@@ -24,7 +26,13 @@
                    </div>
                  </li>
                </ul>
-               <li><a class="nav-link" routerLink="/landingPage">Cerrar sesión   <i class="icon ion-md-home"></i></a></li>  
+               <form id="nav-right" class="form-inline my-2 my-lg-2">
+                 <input id="buscar-text" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                 <button type="button" class="btn btn-default">
+                   <span id="buscar-icon" class="glyphicon glyphicon-search"></span>
+                </button> 
+               </form>
+               <li><a class="nav-link" routerLink="/landingPage">Cerrar sesión  <i class="icon ion-md-home"></i></a></li>  
              </div>
            </nav>
        </div>

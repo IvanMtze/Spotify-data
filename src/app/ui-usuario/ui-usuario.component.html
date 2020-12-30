@@ -1,0 +1,59 @@
+<app-navbar-usuario></app-navbar-usuario>
+<section class="cards">
+    <div class="row">
+        <div class="col-sm-6">
+          <div id="reproducciones" class="card">
+            <div class="card-body">
+              <h5  class="card-title">Reproducciones en los ultimos 30 dias</h5>
+              <p class="card-text">Aqui se mostraria el resultado de la consulta</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div id="escuchados" class="card">
+            <div class="card-body">
+              <h5 class="card-title">Escuchados en los ultimos 30 dias</h5>
+              <p class="card-text">Aqui se mostraria el resultado de la consulta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section>
+    <div class="tabla-datos">
+       <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Genero</th>
+              <th scope="col">Artista</th>
+              <th scope="col">Nombre del Album</th>
+              <th scope="col">Popularidad</th>
+              <th scope="col">Fecha de lanzamiento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = 'let generos of spotifyGenerosApi$'>
+              <td>{{generos.id}}</td>
+              <td>{{generos.name}}</td>
+              <td>{{generos.artists}}</td>
+              <td>{{generos.album_type}}</td>
+              <td>{{generos.popularity}}</td>
+              <td>{{release_date}}</td>
+
+<!--               <td>{{generos.external_urls}}</td>
+              <td>{{generos.followers}}</td>
+              <td>{{generos.genres}}</td>
+              <td>{{generos.href}}</td>
+              <td>{{generos.name}}</td>
+              <td>{{generos.type}}</td>
+              <td>{{generos.uri}}</td>
+              <td>{{generos.available_markets}}</td>
+              <td>{{generos.copyrights}}</td>
+              <td>{{external_ids}}</td>
+              <td>{{generos.available_markets}}</td>
+              <td>{{generos.available_markets}}</td> -->
+          </tbody>
+        </table>
+    </div>
+ </section>

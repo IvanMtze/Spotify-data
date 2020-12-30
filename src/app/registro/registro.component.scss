@@ -1,24 +1,58 @@
-$fondo: #191414;
+$fondo: #0e0d0d;
 $verde: #1DB954;
 
 .fondo{
   background-color: $fondo;
 }
 .fondo_formulario{
-  background-color: black;
+  background: #18312b;
+  border-radius: 0.3cm;
 }
 .texto_verde{
   color: $verde;
 }
-.btn_spotify{
-  background-color: $verde;
+
+#boton-registrarse{
+  background: $verde;
   color: white;
-  font-size: 1.5em;
-  width: 60%;
-  border-radius: 50px;
+  border-radius: .5cm;
 }
+
 @media (min-width: 768px) {
   .formulario{
     max-width: 50%;
   }
 }
+
+#registro-body{
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #18312b;
+}
+
+#titulo{
+  text-align: center;
+}
+
+#formulario{
+  padding: 20px;
+}
+
+#formulario label{
+  padding: 5px;
+  font-size: 12px;
+}
+
+#formulario input{
+  padding: 5px;
+  font-size: 12px;
+  width: 90%;
+}
+
+#formulario p{
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
