@@ -24,20 +24,35 @@
        <table class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th scope="col">Numero</th>
+              <th scope="col">ID</th>
               <th scope="col">Genero</th>
               <th scope="col">Artista</th>
-              <th scope="col">Canción</th>
-              <th scope="col">Dnce</th>
+              <th scope="col">Nombre del Album</th>
+              <th scope="col">Popularidad</th>
+              <th scope="col">Fecha de lanzamiento</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
+            <tr *ngFor = 'let generos of spotifyGenerosApi$'>
+              <td>{{generos.id}}</td>
+              <td>{{generos.name}}</td>
+              <td>{{generos.artists}}</td>
+              <td>{{generos.album_type}}</td>
+              <td>{{generos.popularity}}</td>
+              <td>{{release_date}}</td>
+
+<!--               <td>{{generos.external_urls}}</td>
+              <td>{{generos.followers}}</td>
+              <td>{{generos.genres}}</td>
+              <td>{{generos.href}}</td>
+              <td>{{generos.name}}</td>
+              <td>{{generos.type}}</td>
+              <td>{{generos.uri}}</td>
+              <td>{{generos.available_markets}}</td>
+              <td>{{generos.copyrights}}</td>
+              <td>{{external_ids}}</td>
+              <td>{{generos.available_markets}}</td>
+              <td>{{generos.available_markets}}</td> -->
           </tbody>
         </table>
     </div>

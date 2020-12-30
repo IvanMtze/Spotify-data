@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import {OperacionesSpotifyService} from '../servicios/generos.service';
+import {GenerosApi} from '../models/GenerosApi';
 
 @Component({
   selector: 'app-ui-usuario',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiUsuarioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private generosService: OperacionesSpotifyService) { }
 
+  spotifyGenerosApi$: GenerosApi[];
+  
   ngOnInit(): void {
+    this.mostrar()
   }
+
+  mostrar(){
+    return this.generosService.getGeneros()
+    .subscribe(
+      data => this.spotifyGenerosApi$ = data)
+   }
 
 }

@@ -30,9 +30,10 @@ export class OperacionesSpotifyService {
     })
   }
   // HttpClient API post() method => Create employee
-  getGeneros(){
-    return this.http.get<GenerosApi>(this.apiURL + '/api/album/');
+  getGeneros(): Observable<GenerosApi[]> {
+    return this.http.get<GenerosApi[]>(this.apiURL+'api/album/',this.httpOptions)
   }
+
 
   // Error handling
   handleError(error) {
