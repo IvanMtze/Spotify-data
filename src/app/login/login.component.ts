@@ -1,8 +1,10 @@
 
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
-import { UsuariosService } from '../usuarios.service';
-import {Router} from "@angular/router"
+import {Router} from "@angular/router";
+import { UsersService } from '../servicios/users.service';
+import { UsersApi } from "../models/usersapi";
+import { StorageService } from "../servicios/storage.service";
 
 
 @Component({
@@ -12,26 +14,44 @@ import {Router} from "@angular/router"
 })
 export class LoginComponent implements OnInit {
 
-  usuarios = [];
-  
-  contra: string = '';
-  
+  result = '';
+  nombreUsuario = '';
+  contrasenia = '';
 
-  constructor(private _data: UsuariosService,private router: Router) { }
+  constructor(
+    private usersService: UsersService,
+    private storageService: StorageService,
+    private router: Router
+  ) { }
+
   ngOnInit(): void {
-    this._data.usuario.subscribe(res=>this.usuarios=res);
   }
-  iniciarSesion(correo,contra){
-    
-    this.usuarios.forEach(usuario => {
-      if(usuario.correo == correo && usuario.contra == contra){
-        console.log("inicio de sesión exitoso")
-        this.router.navigate([''])
-      } else {
-        console.log("inicio de sesión falló")
-      }
-    });
-    
-    
+
+  iniciarSesion() {
+    var mydata = new UsersApi;
+
+    if (this.nombreUsuario == "" || this.contrasenia == "") {
+
+      alert('USUARIO Y CONTRASEÑA REQUERIDOS');
+
+    } else {
+
+      mydata.username = this.nombreUsuario;
+      mydata.password = this.contrasenia;
+
+      return this.usersService.loginUser(mydata)
+        .subscribe((data: any) => {
+
+          this.storageService.setSession("token", data.accessToken);
+          if(mydata.username="admin"){
+            this.router.navigate(['admin']);
+          }else{
+            this.router.navigate(['user']);
+          }
+
+        })
+
+    }
+
   }
 }

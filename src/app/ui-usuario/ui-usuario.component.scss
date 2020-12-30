@@ -1,0 +1,41 @@
+
+.tabla-datos{
+    height: 300px;
+    padding: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 70%;
+    font-size: 16px;
+}
+
+.tabla-datos table{
+    text-align: center;
+    align-items: flex-end;
+}
+
+.cards{
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#reproducciones{
+    width: 300px;
+    background: hsla(56, 97%, 48%, 0.89);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.8cm;
+}
+
+#escuchados{
+    width: 300px;
+    background: #5bb0f5;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.8cm;
+}
