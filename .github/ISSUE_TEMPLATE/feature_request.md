@@ -1,6 +1,6 @@
 ---
 Name: Feature request
-Descripcion corta: Suggest an idea for this project
+About: Suggest an idea for this project
 Titulo: ' '
 Label: ' '
 assignees: ' '
