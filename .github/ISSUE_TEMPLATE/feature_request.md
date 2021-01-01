@@ -1,9 +1,9 @@
 ---
-Nombre: Feature request
+Name: Feature request
 Descripcion corta: Suggest an idea for this project
-Titulo: ''
-Label: ''
-assignees: ''
+Titulo: ' '
+Label: ' '
+assignees: ' '
 
 ---
 Descripcion detallada de la funcionalidad. Escribe tanto como puedas.
