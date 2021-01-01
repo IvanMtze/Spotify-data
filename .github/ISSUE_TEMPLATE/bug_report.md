@@ -6,33 +6,21 @@ labels: ''
 assignees: ''
 
 ---
+Descripcion detallada del problema y si es posible agregar imagenes.
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+¿Cómo le hiciste para que te saliera el error?
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. 
+...
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Tareas de diseño
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+* [ ]  diseño
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## Tareas de desarrollo
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+* [ ]  desarrollo
 
-**Additional context**
-Add any other context about the problem here.
+## Pruebas de comprobacion
+
+* [ ]  Pruebas (opc)
