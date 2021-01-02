@@ -15,8 +15,8 @@ export class NavbarAdminComponent implements OnInit {
 
     cerrarSesion(){
         new StorageService().sessionDeleteAll();
-        alert("Sesión cerrada");
-        console.log();
+        //alert("Sesión cerrada");
+        console.log("sesion cerrada");
     }
   
 
