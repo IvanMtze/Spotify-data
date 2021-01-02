@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from '../servicios/storage.service';
 
 @Component({
   selector: 'app-navbar-usuario',
@@ -12,4 +13,9 @@ export class NavbarUsuarioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cerrarSesion(){
+    new StorageService().sessionDeleteAll();
+    //alert("Sesión cerrada");
+    console.log("Sesión cerrada");
+    }
 }
