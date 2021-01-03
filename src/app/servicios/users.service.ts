@@ -68,7 +68,7 @@ export class UsersService {
     } else {
       // Get server-side error
       //errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-      alert('DATOS INCORRECTOS');
+      alert('USUARIO NO ENCONTRADO');
     }
     //window.alert(errorMessage);
     return throwError(errorMessage);
