@@ -25,9 +25,9 @@ export class UsersService {
   // Http Options
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/x-www-form-urlencoded'
     })
-  }  
+  }
   // HttpClient API post() method => Create employee
   loginUser(userApi): Observable<UsersApi> {
     console.log(JSON.stringify(userApi));
@@ -46,7 +46,7 @@ export class UsersService {
     )
   }
 
-  // Error handling 
+  // Error handling
   handleError(error) {
      let errorMessage = '';
      if(error.error instanceof ErrorEvent) {
