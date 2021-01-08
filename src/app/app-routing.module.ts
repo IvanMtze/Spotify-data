@@ -6,6 +6,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { UiAdminComponent } from './ui-admin/ui-admin.component';
 import { UiUsuarioComponent } from "./ui-usuario/ui-usuario.component";
 
+import{AuthGuardGuard} from './servicios/auth-guard.guard';
 const routes: Routes = [
   {
     path:"",
@@ -26,11 +27,13 @@ const routes: Routes = [
   },
   {
     path: "admin", 
-    component: UiAdminComponent
+    component: UiAdminComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
     path: "user", 
-    component: UiUsuarioComponent
+    component: UiUsuarioComponent,
+    canActivate: [AuthGuardGuard]
   },
 ];
 

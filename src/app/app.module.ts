@@ -14,6 +14,8 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 //services
 import { HttpClientModule } from '@angular/common/http';
 import { StorageService } from "../app/servicios/storage.service";
+//guards
+import{AuthGuardGuard} from './servicios/auth-guard.guard';
 
 
 @NgModule({
@@ -34,7 +36,7 @@ import { StorageService } from "../app/servicios/storage.service";
     FormsModule,
     HttpClientModule
   ],
-  providers: [StorageService],
+  providers: [StorageService,AuthGuardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
