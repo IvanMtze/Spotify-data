@@ -41,4 +41,8 @@ export class  StorageService {
   localDeleteByKey(key: string) {
     localStorage.removeItem(key);
   }
+
+  islogged(){
+    return !!sessionStorage.getItem("token");
+  }
 }
