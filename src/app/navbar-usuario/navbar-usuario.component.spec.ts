@@ -22,4 +22,11 @@ describe('NavbarUsuarioComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
+  it('Should call  cerrarSesion() method', () => {
+    spyOn(console, 'log');
+    component.cerrarSesion();
+    expect(console.log).toHaveBeenCalledWith('Sesión cerrada');
+  });
+
 });

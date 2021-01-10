@@ -25,22 +25,22 @@ export class  StorageService {
     sessionStorage.removeItem(key);
   }
 
-  setLocal(key: string, obj: any) {
-    localStorage.setItem(key, JSON.stringify(obj));
-  }
+  // setLocal(key: string, obj: any) {
+  //   localStorage.setItem(key, JSON.stringify(obj));
+  // }
 
-  getLocal(key: string) {
-    const obj = localStorage.getItem(key);
-    return obj ? JSON.parse(obj) : null;
-  }
+  // getLocal(key: string) {
+  //   const obj = localStorage.getItem(key);
+  //   return obj ? JSON.parse(obj) : null;
+  // }
 
-  localDeleteAll() {
-    localStorage.clear();
-  }
+  // localDeleteAll() {
+  //   localStorage.clear();
+  // }
 
-  localDeleteByKey(key: string) {
-    localStorage.removeItem(key);
-  }
+  // localDeleteByKey(key: string) {
+  //   localStorage.removeItem(key);
+  // }
 
   islogged(){
     return !!sessionStorage.getItem("token");
