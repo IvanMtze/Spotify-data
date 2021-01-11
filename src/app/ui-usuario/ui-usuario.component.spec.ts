@@ -29,7 +29,7 @@ describe('UiUsuarioComponent', () => {
     fixture.detectChanges();
   });
 
-  it('Should call  mostar() method', () => {
+  it('Should call  mostrar() method', () => {
     expect(component.mostrar()).toBeTruthy();
   });
 

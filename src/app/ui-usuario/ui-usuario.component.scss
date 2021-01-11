@@ -1,7 +1,41 @@
+header{
+    padding: 10px;
+    width: 90%;
+    height: 500px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://hrblog.spotify.com/wp-content/uploads/2018/02/inclusion-image.jpg");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://hrblog.spotify.com/wp-content/uploads/2018/02/inclusion-image.jpg");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+header h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-header{
+    padding: 10px;
+}
+
+.info-header a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .tabla-datos{
     height: 300px;
-    padding: 20px;
+    padding: 50px;
     margin-left: auto; 
     margin-right: auto;
     width: 70%;
@@ -13,11 +47,10 @@
     align-items: flex-end;
 }
 
-.cards{
-    padding: 50px;
-    margin-left: auto;
+.card-body{
+    padding: 10px;
     margin-right: auto;
-    width: 60%;
+    width: 90%;
 }
 
 #reproducciones{

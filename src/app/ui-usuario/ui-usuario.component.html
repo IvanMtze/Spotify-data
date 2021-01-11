@@ -1,25 +1,48 @@
 <app-navbar-usuario></app-navbar-usuario>
-<section class="cards">
-    <div class="row">
-        <div class="col-sm-6">
-          <div id="reproducciones" class="card">
-            <div class="card-body">
-              <h5  class="card-title">Albums mas populares</h5>
-              <p class="card-text">Aqui se mostraria el resultado de la consulta</p>
+<header>
+  <section class="info-header">
+    <h1>Artistas</h1>
+    <section class="cards">
+      <div class="row">
+          <div class="col-sm-6">
+            <div id="reproducciones" class="card">
+              <div class="card-body">
+                <h5  class="card-title">3 Artistas mas populares</h5>
+                <p class="card-text">Aqui se mostraria el resultado de la consulta</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div id="escuchados" class="card">
-            <div class="card-body">
-              <h5 class="card-title">Escuchados en los ultimos 30 dias</h5>
-              <p class="card-text">Aqui se mostraria el resultado de la consulta</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  </section>
+  </section>
+</header>
+<section class="tabla artistas">
+  <div class="tabla-datos">
+     <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">popularidad</th>
+            <th scope="col">Seguidores</th>
+            <th scope="col">Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = 'let generos of spotifyGenerosApi$'>
+            <td>{{generos.id}}</td>
+            <td>{{generos.name}}</td>
+            <td>{{generos.artists}}</td>
+            <td>{{generos.album_type}}</td>
+            <td>{{generos.popularity}}</td>
+            <td>{{release_date}}</td>
+
+        </tbody>
+      </table>
+  </div>
 </section>
-<section>
+
+<section class="tabla generos">
     <div class="tabla-datos">
        <table class="table table-bordered table-striped">
           <thead>

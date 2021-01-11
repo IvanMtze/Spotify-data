@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   result = '';
   nombreUsuario = '';
   contrasenia = '';
+  alert='';
 
   constructor(
     private usersService: UsersService,
@@ -31,8 +32,8 @@ export class LoginComponent implements OnInit {
     var mydata = new UsersApi;
 
     if (this.nombreUsuario == "" || this.contrasenia == "") {
-
-      alert('USUARIO Y CONTRASEÑA REQUERIDOS');
+      this.alert='USUARIO Y CONTRASEÑA REQUERIDOS';
+      alert(this.alert);
 
     } else {
 

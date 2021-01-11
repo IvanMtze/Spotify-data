@@ -36,5 +36,14 @@ describe('LoginComponent', () => {
     expect(component.iniciarSesion()).toBeTruthy();
   });
 
+  it('Should call  iniciarSesion() method and alert be USUARIO Y CONTRASEÑA REQUERIDOS', () => {
+    let result;
+    component.nombreUsuario='';
+    component.contrasenia='';
+    component.iniciarSesion();
+    result=component.alert;
+    expect(result).toBe('USUARIO Y CONTRASEÑA REQUERIDOS');
+  });
+
 
 });
