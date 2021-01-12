@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import {OperacionesSpotifyService} from '../servicios/generos.service';
-import {GenerosApi} from '../models/GenerosApi';
+import {OperacionesSpotifyService} from '../servicios/operaciones-spotify.service';
+import {Artistas} from '../models/artistas';
 
 @Component({
   selector: 'app-ui-usuario',
@@ -9,18 +9,17 @@ import {GenerosApi} from '../models/GenerosApi';
 })
 export class UiUsuarioComponent implements OnInit {
 
-  constructor(private generosService: OperacionesSpotifyService) { }
+  constructor(private spotifyService: OperacionesSpotifyService) { }
 
-  spotifyGenerosApi$: GenerosApi[];
+  spotifyArtistas$: Artistas[];
   
   ngOnInit(): void {
-    this.mostrar()
   }
 
   mostrar(){
-    return this.generosService.getGeneros()
+    return this.spotifyService.getArtistas()
     .subscribe(
-      data => this.spotifyGenerosApi$ = data)
+      data => this.spotifyArtistas$ = data)
    }
 
 }

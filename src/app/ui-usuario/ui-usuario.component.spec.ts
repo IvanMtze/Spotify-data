@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { OperacionesSpotifyService } from '../servicios/generos.service';
+import { OperacionesSpotifyService } from '../servicios/operaciones-spotify.service';
 import { StorageService } from '../servicios/storage.service';
 
 import { UiUsuarioComponent } from './ui-usuario.component';
