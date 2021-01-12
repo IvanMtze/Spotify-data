@@ -32,11 +32,11 @@ describe('AuthGuardGuard', () => {
     expect(guard).toBeTruthy();
   });
 
-  xit('Should call  canActivate() method', () => {
+  it('Should call  canActivate() method', () => {
     service.sessionDeleteAll();
     expect(guard.canActivate()).toBeFalse();
   });
-  xit('Should call  canActivate() method to true', () => {
+  it('Should call  canActivate() method to true', () => {
     service.setSession('token', 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IiLCJpYXQiOjE2MTAyMTg1MDMsImV4cCI6MTYxMDMwNDkwM30.NKL9cczXLcIxNU9rMA0AK94iHtwu--NgQoSvlRfwDz2rJRwjdD2aY_moC-nkZ3Qjp8kEyTbGtWvrvIl0Iu8vrg');
     expect(guard.canActivate()).toBeTrue();
   });
