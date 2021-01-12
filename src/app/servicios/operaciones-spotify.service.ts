@@ -4,6 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { StorageService } from "../servicios/storage.service";
+import {Artistas} from '../models/artistas';
+import {GenerosApi} from '../models/GenerosApi';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +33,11 @@ export class OperacionesSpotifyService {
   }  
   // HttpClient API post() method => Create employee
   getGeneros(){
-    //return this.http.get<ImcApi>(this.apiURL + '/api/album/');
+    return this.http.get<GenerosApi[]>(this.apiURL+'api/generos/',this.httpOptions)
+  }
+
+  getArtistas(): Observable<Artistas[]> {
+    return this.http.get<Artistas[]>(this.apiURL+'api/artist/',this.httpOptions)
   }
 
   // Error handling 

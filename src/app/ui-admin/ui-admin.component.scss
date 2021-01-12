@@ -1,3 +1,70 @@
+header{
+    padding: 10px;
+    width: 90%;
+    height: 500px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.349), hsla(222, 11%, 24%, 0.603)),url("https://images.complex.com/complex/images/c_fill,f_auto,g_center,w_1200/fl_lossy,pg_1/cuiicx2dezkjzlp49oj9/spotify-playlists-getty-mahmut-serdar-alakus");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.336), hsla(222, 11%, 24%, 0.603)),url("https://images.complex.com/complex/images/c_fill,f_auto,g_center,w_1200/fl_lossy,pg_1/cuiicx2dezkjzlp49oj9/spotify-playlists-getty-mahmut-serdar-alakus");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+header h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-generos{
+    padding: 10px;
+    width: 90%;
+    height: 600px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.336), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.363), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+.info-generos h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.info-body{
+    width: 40%;
+    margin-right: auto;
+}
+
+.text h4{
+    text-align: center;
+    color: #48C9B0;
+    font-weight: bold;
+}
+.text h5{
+    text-align: center;
+    padding: 10px;
+    color: #76D7C4 ;
+    font-weight: bold;
+}
 
 .tabla-datos{
     height: 300px;
@@ -21,4 +88,51 @@ button span{
 
 form input{
     font-size: 15px;
+}
+
+//buttons
+.buttons{
+    padding: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+}
+
+.button-consultar{
+    align-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.button-consultar input{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0.2cm;
+    color: #fff;
+    background:  #3af800b2;
+}
+
+.button-eliminarbyID{
+    align-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.button-eliminarbyID input{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0.2cm;
+    color: #fff;
+    background:  #3af800b2;
+}
+
+.textID{
+    padding: 50px 20%;
+    height: 120px;
+}
+
+.textID input{
+    font-size: 14px;
 }

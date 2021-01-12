@@ -23,6 +23,31 @@ header h1{
     text-align: center;
 }
 
+.info-generos{
+    padding: 10px;
+    width: 90%;
+    height: 600px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+.info-generos h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .info-header{
     padding: 10px;
 }
@@ -53,6 +78,16 @@ header h1{
     width: 90%;
 }
 
+.card-generos{
+    margin-left: auto;
+}
+
+.card-body-generos{
+    padding: 10px;
+    margin-right: auto;
+    width: 90%;
+}
+
 #reproducciones{
     width: 300px;
     background: hsla(56, 97%, 48%, 0.89);
@@ -71,4 +106,26 @@ header h1{
     font-weight: bold;
     text-align: center;
     border-radius: 0.8cm;
+}
+
+//buttons
+.buttons{
+    padding: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.button-consultar{
+    align-content: center;
+    text-align: center;
+}
+
+.button-consultar input{
+    width: 30%;
+    font-size: 20px;
+    border-radius: 0.2cm;
+    color: #fff;
+    background:  #3af800b2;
 }
