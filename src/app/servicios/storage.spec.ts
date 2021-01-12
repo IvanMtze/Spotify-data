@@ -20,12 +20,6 @@ describe('StorageService', () => {
     service = TestBed.inject(StorageService);
   });
 
-  it('Should call getApiUrl() method', async () => {
-
-    let res = service.getApiUrl();
-    expect(res).toBe('https://spotify-backend-dev.herokuapp.com/');
-  });
-
   it('Should call setSession() method', () => {
     service.setSession('token', 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IiLCJpYXQiOjE2MTAyMTg1MDMsImV4cCI6MTYxMDMwNDkwM30.NKL9cczXLcIxNU9rMA0AK94iHtwu--NgQoSvlRfwDz2rJRwjdD2aY_moC-nkZ3Qjp8kEyTbGtWvrvIl0Iu8vrg');
     expect(service.islogged()).toBeTruthy();

@@ -16,7 +16,7 @@ describe('UsersService', () => {
     service = TestBed.inject(UsersService);
   });
   
-  it('Should call loginUser method', () => {
+  xit('Should call loginUser method', () => {
     let user = new UsersApi;
     user.username='victor'
     user.password='123456789'
@@ -24,7 +24,7 @@ describe('UsersService', () => {
     expect(res).toBeTruthy()
    });
 
-   it('Should call registerUser method', () => {
+   xit('Should call registerUser method', () => {
     let user = new UsersRegisterApi;
     user.name='Jesus'
     user.email='jesus.ah@gmail.com'
