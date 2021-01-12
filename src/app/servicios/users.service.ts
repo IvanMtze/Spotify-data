@@ -13,7 +13,7 @@ import { retry, catchError } from 'rxjs/operators';
 
 export class UsersService {
 
- apiURL = 'https://spotify-backend-dev.herokuapp.com/';
+ apiURL = 'http://40.78.153.176:8080/';
 
 
   constructor(private http: HttpClient) { }

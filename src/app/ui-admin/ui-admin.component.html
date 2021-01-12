@@ -13,35 +13,31 @@
 
 <section class="buttons">
   <div class="button-consultar">
-    <input type="submit" value="Consultar" class="btn">
-  </div>
-  <div class="textID">
-    <input id="id" [(ngModel)]="id" type="text" class="form-control id" name="id"
-      placeholder="Ingresa el ID">
-  </div>
-  <div class="button-eliminarbyID">
-    <input type="submit" value="Eliminar" class="btn">
+    <input type="submit" value="Consultar" class="btn" (click)="mostrar()">
   </div>
 </section>
 
-<section>
+<section class="tabla-artistas">
   <div class="tabla-datos">
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">Genero</th>
-          <th scope="col">Artista</th>
-          <th scope="col">Canción</th>
-          <th scope="col">Dnce</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">popularidad</th>
+          <th scope="col">Seguidores</th>
+          <th scope="col">Url</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+        <tr *ngFor='let artistas of spotifyArtistas$'>
+          <td>{{artistas.id}}</td>
+          <td>{{artistas.name}}</td>
+          <td>{{artistas.type}}</td>
+          <td>{{artistas.popularity}}</td>
+          <td>{{artistas.followers}}</td>
+          <td>{{artistas.uri}}</td>
         </tr>
       </tbody>
     </table>

@@ -2,12 +2,6 @@ export class  StorageService {
 
   constructor(){}
 
-  getApiUrl(){
-    return   'https://spotify-backend-dev.herokuapp.com/'
-    //return   'http://201.147.64.84:8083' 
-    
-  }
-
   setSession(key: string, obj: any) {
     sessionStorage.setItem(key, JSON.stringify(obj))
   }
