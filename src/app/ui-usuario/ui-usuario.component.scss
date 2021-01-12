@@ -1,0 +1,135 @@
+header{
+    padding: 10px;
+    width: 90%;
+    height: 500px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://hrblog.spotify.com/wp-content/uploads/2018/02/inclusion-image.jpg");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://hrblog.spotify.com/wp-content/uploads/2018/02/inclusion-image.jpg");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+header h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-generos{
+    padding: 10px;
+    width: 90%;
+    height: 600px;
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.616), hsla(222, 11%, 24%, 0.603)),url("https://open.scdn.co/cdn/images/og-image.64b84348.png");
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2cm;
+
+}
+
+.info-generos h1{
+    padding: 5px 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-header{
+    padding: 10px;
+}
+
+.info-header a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tabla-datos{
+    height: 300px;
+    padding: 50px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 70%;
+    font-size: 16px;
+}
+
+.tabla-datos table{
+    text-align: center;
+    align-items: flex-end;
+}
+
+.card-body{
+    padding: 10px;
+    margin-right: auto;
+    width: 90%;
+}
+
+.card-generos{
+    margin-left: auto;
+}
+
+.card-body-generos{
+    padding: 10px;
+    margin-right: auto;
+    width: 90%;
+}
+
+.card-body-generos h5{
+    font-weight: bold;
+}
+
+#reproducciones{
+    width: 300px;
+    background: hsla(56, 97%, 48%, 0.89);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.8cm;
+}
+
+#escuchados{
+    width: 300px;
+    background: #5bb0f5;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.8cm;
+}
+
+//buttons
+.buttons{
+    padding: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.button-consultar{
+    align-content: center;
+    text-align: center;
+}
+
+.button-consultar input{
+    width: 30%;
+    font-size: 20px;
+    border-radius: 0.2cm;
+    color: #fff;
+    background:  #3af800b2;
+}
