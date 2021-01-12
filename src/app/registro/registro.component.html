@@ -1,0 +1,34 @@
+<app-navbar-inicial></app-navbar-inicial>
+<div class="fondo text-white">
+  <form id="registro-body" action="#" class="fondo_formulario p-5 container-fluid  formulario" id="formulario">
+    <h2 id="titulo">Regístrate</h2>
+    <br>
+    <div id="formulario" class="pl-5 pr-5">
+      <div class="form-group">
+        <label for="nombre" class="font-weight-bold">¿Cuál es tu nombre?</label>
+        <input id="nombre" [(ngModel)]="nombre" type="text" class="form-control operator1" name="operator1"
+          placeholder="Ingresa tu Nombre">
+      </div>
+      <div class="form-group">
+        <label for="correo" class="font-weight-bold">¿Cuál es tu nombre de usuario?</label>
+        <input id="nombreUsuario" [(ngModel)]="nombreUsuario" type="text" class="form-control operator2"
+          name="operator2" placeholder="Ingresa tu Nombre de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="correo-confirm" class="font-weight-bold">¿Cuál es tu correo electrónico</label>
+        <input id="correo" [(ngModel)]="correo" type="email" class="form-control operator3" name="operator3"
+          placeholder="Ingresa tu Correo">
+      </div>
+      <div class="form-group">
+        <label for="contra" class="font-weight-bold">Crea una contraseña</label>
+        <input id="contrasenia" [(ngModel)]="contrasenia" type="password" class="form-control operator4"
+          name="operator4" placeholder="Ingresa tu contraseña">
+      </div>
+
+      <br><br>
+      <p class="texto_verde ">
+        Al hacer click en Registrarte aceptas los Terminos y condiciones de Uso de Spotify-Data. </p>
+      <input id="boton-registrarse" type="submit" value="Registrate" class="btn btn-lg btn_spotify mt-3" (click)="registrarUsuario()">
+    </div>
+</form>
+</div>

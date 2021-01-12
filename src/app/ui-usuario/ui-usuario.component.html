@@ -1,0 +1,68 @@
+<app-navbar-usuario></app-navbar-usuario>
+<header>
+  <section class="info-header">
+    <h1>Artistas</h1>
+    <section class="info-body">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="reproducciones" class="card">
+            <div class="card-body">
+              <h5 class="card-title">3 Artistas más populares</h5>
+              <ul>
+                <li>Bad Bunny, Drake y J Balvin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</header>
+<section class="buttons">
+  <div class="button-consultar">
+    <input type="submit" value="Consultar" class="btn">
+  </div>
+</section>
+<section class="tabla artistas">
+  <div class="tabla-datos">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">popularidad</th>
+          <th scope="col">Seguidores</th>
+          <th scope="col">Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let generos of spotifyGenerosApi$'>
+          <td>{{generos.id}}</td>
+          <td>{{generos.name}}</td>
+          <td>{{generos.artists}}</td>
+          <td>{{generos.album_type}}</td>
+          <td>{{generos.popularity}}</td>
+          <td>{{release_date}}</td>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="info-generos">
+  <h1>Canciones</h1>
+  <section class="cards">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="reproducciones" class="card-generos">
+          <div class="card-body-generos">
+            <h5 class="card-title">Canciones más populares</h5>
+            <ul>“Blinding Lights” by The Weeknd
+              “Dance Monkey” by Tones And I 
+              “The Box” by Roddy Ricch </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

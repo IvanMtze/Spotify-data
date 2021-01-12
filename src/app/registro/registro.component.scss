@@ -1,0 +1,58 @@
+$fondo: #0e0d0d;
+$verde: #1DB954;
+
+.fondo{
+  background-color: $fondo;
+}
+.fondo_formulario{
+  background: #18312b;
+  border-radius: 0.3cm;
+}
+.texto_verde{
+  color: $verde;
+}
+
+#boton-registrarse{
+  background: $verde;
+  color: white;
+  border-radius: .5cm;
+}
+
+@media (min-width: 768px) {
+  .formulario{
+    max-width: 50%;
+  }
+}
+
+#registro-body{
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #18312b;
+}
+
+#titulo{
+  text-align: center;
+}
+
+#formulario{
+  padding: 20px;
+}
+
+#formulario label{
+  padding: 5px;
+  font-size: 12px;
+}
+
+#formulario input{
+  padding: 5px;
+  font-size: 12px;
+  width: 90%;
+}
+
+#formulario p{
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
