@@ -12,7 +12,7 @@ import {GenerosApi} from '../models/GenerosApi';
 })
 export class OperacionesSpotifyService {
 
- apiURL = 'https://jwt-api-imc.herokuapp.com/';
+ apiURL = 'http://40.78.153.176:8080/';
 
 
   constructor(private http: HttpClient,
