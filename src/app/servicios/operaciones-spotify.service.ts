@@ -6,6 +6,7 @@ import { retry, catchError } from 'rxjs/operators';
 import { StorageService } from "../servicios/storage.service";
 import {Artistas} from '../models/artistas';
 import {GenerosApi} from '../models/GenerosApi';
+import { Track } from '../models/track';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +31,7 @@ export class OperacionesSpotifyService {
       'Authorization': 'Bearer ' + this.storageService.getSession("token")
 
     })
-  }  
+  }
   // HttpClient API post() method => Create employee
   getGeneros(){
     return this.http.get<GenerosApi[]>(this.apiURL+'api/generos/',this.httpOptions)
@@ -39,8 +40,11 @@ export class OperacionesSpotifyService {
   getArtistas(): Observable<Artistas[]> {
     return this.http.get<Artistas[]>(this.apiURL+'api/artist/',this.httpOptions)
   }
+  getTracks(): Observable<Track[]> {
+    return this.http.get<Track[]>(this.apiURL+'api/track/',this.httpOptions)
+  }
 
-  // Error handling 
+  // Error handling
   handleError(error) {
      let errorMessage = '';
      if(error.error instanceof ErrorEvent) {

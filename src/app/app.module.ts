@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StorageService } from "../app/servicios/storage.service";
 //guards
 import{AuthGuardGuard} from './servicios/auth-guard.guard';
+import { GraphQLModule } from './graphql.module';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import{AuthGuardGuard} from './servicios/auth-guard.guard';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GraphQLModule
   ],
   providers: [StorageService,AuthGuardGuard],
   bootstrap: [AppComponent]
